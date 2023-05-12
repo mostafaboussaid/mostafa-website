@@ -56,6 +56,8 @@ body {
 .logo {
     margin-right: 40px;
     margin-left: 10px;
+    display: flex;
+    align-items: center;
 }
 .srch {
    margin-left: 39em;
@@ -110,7 +112,7 @@ body {
 /* For Banner */
 
 .banner {
-    background-image: url('./images/rhea-group-space-banner.jpg');
+    background-image: url('./images/space-banner.jpg');
     background-size: cover;
     height: 85vh;
     background-position: center bottom;
