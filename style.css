@@ -110,7 +110,7 @@ body {
 /* For Banner */
 
 .banner {
-    background-image: url('/images/rhea-group-space-banner.jpg');
+    background-image: url('./images/rhea-group-space-banner.jpg');
     background-size: cover;
     height: 85vh;
     background-position: center bottom;
