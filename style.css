@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body { 
+    margin: 0;    
+    width: 100%;
+}
+
+/* For Navigation */
+.mainmenu {
+    z-index: 1;
+    position: fixed;
+    background-color: black;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+.nav {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    list-style: none;
+}
+.bar a {
+    font-family: 'Poppins';
+    font-size: 16px;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    height: 50px;
+    width: 99 px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    padding: 0px 10px 0px 10px;
+}
+
+.bar a:hover:not(.activepage) {
+    background-color: rgb(8, 0, 116);
+    transition: 0.6s ease-in;
+}
+.bar a:not(:hover) {
+    transition: 0.6s ease-in;
+}
+.activepage {
+    background-color: rgb(12, 0, 185);
+    text-decoration: none !important;
+}
+
+.logo {
+    margin-right: 40px;
+    margin-left: 10px;
+}
+.srch {
+   margin-left: 39em;
+   background-color: transparent;
+   border: 2px solid blue;
+   border-top-left-radius: 2px;
+   border-bottom-left-radius: 2px;
+   width: 20em;
+   height: 30px;
+   border-right: none;
+   outline: none;
+   color: white;
+   padding-left: 5px;
+}
+.btn {
+    width: 2em;
+    height: 30px;
+    border: 2px solid blue;
+    background-color: blue;
+    color: white;
+    padding: 0;
+    margin: 0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    cursor: pointer;
+}
+.notice {
+    z-index: 1;
+    background-color: green;
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+.notice p {
+    font-family: arial;
+    font-size: 16px;
+    color: #fff;
+}
+
+@media (max-width:600px) {
+}
+
+/* End of Navigation */
+
+/* For Banner */
+
+.banner {
+    background-image: url('/images/rhea-group-space-banner.jpg');
+    background-size: cover;
+    height: 85vh;
+    background-position: center bottom;
+    width: 100%;
+    top: 134px;
+    position: fixed;
+    margin-top: -54px;
+    text-align: center;
+}
+
+.banner:after {
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .45;
+    z-index: -1;
+}
+
+.banner h1 {
+    color: white;
+    font-family: 'Poppins';
+    font-size: 85px;
+    padding-top: 5%;
+}
+.banner p {
+    color: white;
+    font-family: arial;
+    font-size: 21px;
+    margin-top: -65px;
+}
+.banner-btn {
+    width: 140px;
+    display: inline-block;
+    height: 50px;
+    background-color: blue;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    border: 2px solid BLUE;
+    color: white;
+    font-family: 'Poppins';
+    cursor: pointer; 
+    font-size: 19px;
+    margin-top: 0px;
+    transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out;
+    
+}
+.banner-btn:hover {
+    background-color: rgb(8, 0, 116);
+    border-color: rgb(8, 0, 116);
+    animation: shake 1.5s infinite;
+}
+@keyframes shake {
+    0% { transform: translateY(0); }
+    10% { transform: translateY(-5px); }
+    20% { transform: translateY(5px); }
+    30% { transform: translateY(-2px); }
+    40% { transform: translateY(2px); }
+    50% { transform: translateY(0); }
+    100% { transform: translateY(0); }
+}
+/* End of banner */
+
+.content-area {
+    width: 100%;
+    position: relative;
+    background: white;
+    top: 600px;
+    height: 70em;
+}
+.content-area h2 {
+    font-size: 40px;
+    margin: 0;
+    padding-top: 30px;
+    font-family: helvetica;
+}
+.content-area p {
+    margin-top: -9px;
+    padding: 2% 0;
+    line-height: 31px;
+    text-align: center;
+}
+.content-page {
+    font-family: arial;
+    position: sticky;
+    bottom: 0;
+    width: 1244px;
+    margin: auto;
+    text-align: center;
+
+}
+
+/* For footer */
+
+#footer {
+    font-family: arial;
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    height: 280px;
+    bottom: 0;
+}
+.footer {
+    font-family: arial;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nav-footer {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 35px;
+    margin-bottom: auto;
+    list-style: none;
+}
+.nav-footer2 {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 35px;
+    margin-bottom: auto;
+    list-style: none;
+}
+.nav-footer3 {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 42px;
+    margin-bottom: auto;
+    list-style: none;
+}
+.bar-footer2 a {
+    color: #fff;
+    font-size: 16px;
+    font-family: arial;
+    color: #fff;
+    text-align: left;
+}
+.bar-footer { 
+    margin: 5px 0px 5px 0px;
+}
+.bar-footer a {
+    text-decoration: none;
+    color: white;
+    font-family: arial;
+    font-size: 16px;
+}
+.nav-footer4 {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 42px;
+    margin-bottom: auto;
+    list-style: none;
+}
+.newsletter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+.footer-srch {
+    background-color: transparent;
+    padding-left: 10px;
+    border: 2px solid blue;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    width: 250px;
+    height: 40px;
+    border-right: none;
+    outline: none;
+    color: white;
+ }
+ .footer-btn {
+    font-family: 'helvetica';
+    width: 80px;
+    text-align: center;
+    outline: none;
+    border-left: none;
+    height: 46px;
+    border: 2px solid blUE;
+    background-color: blue;
+    color: white;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    cursor: pointer;
+ }
+ 
+ .accept-cookies {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    font-family: arial;
+    font-size: 12px;
+    margin-top: 5px;
+ }
+
+.accept-cookies input[type=checkbox] {
+    outline: 1.5px solid blue;
+    accent-color: blue;
+    margin-right: 5px;
+}
+
+.copyright {
+    font-family: arial;
+    color: #fff;
+}
+
+
+/* End of Footer */
+
+h1, h2{
+    font-family: Helvetica;
+}
+
+
+
+
+
+.bottom {
+    font-family: Verdana;
+    position: sticky;
+    font-weight: bold;
+    top: 90px;
+    background-color: blue;
+    text-align: center; 
+    border-radius: 5px;
+    margin-top: 0px;
+    margin-left: 1520px;
+    width: 42px;
+    height: 20px;
+    padding: 10px 0px 12px 0px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.header {
+    position: relative;
+    top: 44%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 65px;
+    font-weight: bold;
+    color:black;
+    font-family: Helvetica;
+}
+
+.subheader {
+    text-align: center;
+    position: relative;
+    top: 44%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    font-weight: normal;
+    color:black;
+    font-family: "Roboto Mono", monospace;
+}
+
+/*
+a:link {
+    color: blue;
+    cursor: pointer;
+}
+a:visited {
+    color: blueviolet;
+}
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+a:active {
+    color: red;
+    text-decoration: underline;
+}
+*/
+table, td, th{
+    border: 2px solid;
+    border-color: black;
+    border-collapse: collapse;
+    font-family: Helvetica;
+}
+thead {
+    background-color: rgb(219, 219, 219);
+}
+tbody {
+    background-color: rgb(240, 240, 240);
+}
+
+table {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: auto;
+}
+
+.hide {
+    display: none;
+}
+.block:hover + .hide{
+    display: block;
+    color: white;
+    background-color: red;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 80%);
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: #d4d4d4;
+    border-left: 1.5px solid rgb(112, 112, 112);
+}
+::-webkit-scrollbar-thumb {
+    background-color: blue;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(8, 0, 116);
+}
+
