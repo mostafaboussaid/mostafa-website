@@ -6,7 +6,7 @@
     }
 @font-face {
     font-family: venus;
-    src: url(./fonts/Venus_Plant.ttf);
+    src: url(fonts/Venus_Plant.ttf);
 }
 
 * {
@@ -376,7 +376,7 @@ a {
     position: relative;
 }
 .img {
-    background-image: url(/images/nebula.JPG);
+    background-image: url(./images/nebula.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
