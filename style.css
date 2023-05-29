@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 @font-face {
     font-family: batman;
-    src: url(/fonts/batmfa__.ttf);
+    src: url(../fonts/batmfa__.ttf);
     }
 @font-face {
     font-family: venus;
-    src: url(/fonts/Venus_Plant.ttf);
+    src: url(../fonts/Venus_Plant.ttf);
 }
 
 * {
