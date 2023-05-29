@@ -436,7 +436,7 @@ a {
     position: relative;
 }
 .img2 {
-    background-image: url(../images/nasa-earth-view.jpg);
+    background-image: url(./images/nasa-earth-view.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
