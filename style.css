@@ -121,7 +121,7 @@ a {
 .banner {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(38, 0, 255, 0.04)), url(./images/pexels-pressmaster-3129957-1920x1080-25fps_AdobeExpress.gif);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(38, 0, 255, 0.04)), url(./images/spacevideo.mp4);
     background-position: center;
     background-size: cover;
     position: relative;
