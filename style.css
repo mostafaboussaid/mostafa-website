@@ -6,7 +6,7 @@
     }
 @font-face {
     font-family: venus;
-    src: url(/fonts/Venus_Plant.TTF);
+    src: url(./fonts/Venus_Plant.ttf);
 }
 
 * {
