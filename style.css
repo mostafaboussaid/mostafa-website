@@ -369,7 +369,7 @@ a {
     height: auto;
     align-items: center;
     margin: 0 auto 7vh auto;
-    padding-top: 7vh;
+    padding-top: 14vh;
 }
 .txt {
     background: linear-gradient(270deg, #000000, rgb(0, 0, 0), rgb(0, 0, 110), blue);
@@ -428,7 +428,7 @@ a {
     width: 85%;
     height: auto;
     align-items: center;
-    margin: 0 auto 7vh auto;
+    margin: 0 auto 14vh auto;
     padding-top: 7vh;
 }
 .txt2 {
