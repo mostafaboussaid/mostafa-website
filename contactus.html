@@ -20,7 +20,7 @@
 </head>
 <body>
 <div class="page">
-  <div class="box">
+  <form class="box">
     <h1>Contact Us</h1>
     <p>Let's get the conversation started. But before, tell us a bit about yourself, and we'll get in touch with you soon.</p>
 
@@ -28,27 +28,26 @@
     <div class="field">
       <div class="field-1">
         <label>Name</label>
-        <input type="text" required >
+        <input type="text" pattern="[a-zA-Z]+[a-zA-Z\s]+" title="Please only include letters" autofocus="on" required >
         <label style="margin-top: 10px;">Email</label>
-        <input type="email" required>
+        <input type="email" pattern="[a-zA-z0-9]+[@]+[a-zA-Z0-9]+[.]+[a-zA-Z]+" title="Please type the correct format of your email" required>
       </div>
 
 
       <div class="field-2">
         <label>Birthday</label>
-        <input type="text" required onfocus="(this.type='date')" onblur="(this.type='text')">
-
-        <label style="margin-top: 10px;">Subject</label>
+        <input type="text" required onfocus="(type='date')" onblur="(type='text')">
+        <label id="notreq" style="margin-top: 10px;">Subject</label>
         <input type="text">  
       </div>
     </div>
 
     <div class="msg">
       <label style="margin-top: 10px;">Message</label>
-      <textarea rows="5" cols="61" required></textarea>
+      <textarea rows="5" cols="61" required minlength="10" maxlength="200"></textarea>
       <button type="submit">Submit</button>
     </div>
-  </div>
+  </form>
 
 
   <div class="box2">
@@ -56,10 +55,10 @@
      <h1>Reach Us</h1>
      <p>You can also reach us on our social media, email or in person</p>
      <ul class="profiles">
-      <li><a href="#"> <span style="font-weight: bold;">Phone:</span> +212 773256322</a></li>
+      <li><a> <span style="font-weight: bold;">Phone:</span> +212 773256322</a></li>
       <li><a href="mailto:mostafaboussaid123@gmail.com"><span style="font-weight: bold;">Email:</span> mostafaboussaid123@gmail.com</a></li>
-      <li><a href="#"><span style="font-weight: bold;">Developer:</span> Mostafa Boussaid aka MB7</a></li>
-      <li><a href="#"><span style="font-weight: bold;">Address:</span> Rue Ismailia 7, N°49 Bd El Mourabitine</a></li>
+      <li><a><span style="font-weight: bold;">Developer:</span> Mostafa Boussaid (MB7)</a></li>
+      <li><a><span style="font-weight: bold;">Address:</span> Rue Ismailia 7, N°49 Bd El Mourabitine</a></li>
      </ul>
      <div class="social">
       <a href="#"><i class="fa-brands fa-instagram"></i></a>
