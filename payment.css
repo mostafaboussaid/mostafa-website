@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contr {
+    background-color: rgb(196, 196, 255);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.contr h1 {
+    width: 90%;
+    font-family: 'Poppins';
+    text-align: center;
+}
+.contr p {
+    font-family: arial;
+    font-size: 12px;
+    margin-bottom: -5px;
+}
+#paypal {
+    width: 350px;
+    
+}
+input {
+    border: 0;
+    outline: 0;
+    width: 200px;
+    height: 45px;
+    border: 3px solid blue;
+    font-size: 15px;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+input:invalid {
+    border: 3px solid red;
+}
+
+@media (max-width:400px) {
+    #paypal {
+        width: 90%;
+    }
+    input {
+        width: 150px;
+    }
+    .contr h1 {
+        font-size: 23px;
+    }
+}

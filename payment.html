@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://www.paypal.com/sdk/js?client-id=AdddyWRfclHZP5cibmo_h15FJbNKStvdyBMtTC6HOY26Ms3UWmqj7c-CNTX4iL2xLIs0K3fLYcRbFXo9&currency=USD"></script>
+    <script src="/payment.js" defer></script>
+    <link rel="stylesheet" href="payment.css">
+  </head>
+
+  <body>
+    <form class="contr">
+     <h1>Help us with your contribution</h1>
+     <p>Currency in $</p>
+     <input type="number" id="amount" step=any min="1" max="1000000" value="10" required>
+     <div id="paypal"></div>
+    </form>
+  </body>
+</html>

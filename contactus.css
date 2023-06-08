@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato');
-@font-face {
-    font-family: batman;
-    src: url(https://mostafaboussaid.github.io/mostafa-website/fonts/batmfa__.ttf);
-    }
-@font-face {
-    font-family: venus;
-    src: url(https://mostafaboussaid.github.io/mostafa-website/fonts/Venus_Plant.ttf);
-}
 
 * {
     margin: 0;
